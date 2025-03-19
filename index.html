@@ -3,15 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5star supermarket</title>
+    <title>5 Star Shop</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/01Oct24 Anis Free Upload.png" type="image/x-icon">
 </head>
+<header>
+    <nav>
+    <video autoplay muted loop  id="myVideo">
+        <source src="videos/shop.mp4" type="video/mp4">
+    </video>
+     <button id="nav-button" >Let's Get Started</button>
+    </nav>
+</header>
 <body>
-    <h1>5star</h1>
-    <p>Best site we are going to make.</p>
-    <p>lorem rthdfgbdcsfgvdcgfxcdfvrfhfgdghvfdxcfg</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quae consequuntur id sint architecto, velit omnis voluptas cumque, deleniti voluptatem molestias nulla dignissimos enim voluptatibus sapiente quod aspernatur perferendis veniam?</p>
-    <script src = 'index.js'></script>
-    <p>Lorem ipsum dolor sit amet.</p>
+    <!--intro  -->
+    <div class="container1">
+        <div class="main">
+            <h1>5 Star Shop</h1>
+            <p>Get Started By Creating Your Shopping List</p>
+            <button id="shop-button">Create Shopping List</button>
+        </div>
+    </div>
+    <!-- adding part -->
+     <div class="container2">
+        <input type="text" id="iteminput" placeholder="Add an item...">
+        <button onclick="additem()">Add</button>
+        <button onclick="clearitem()">Clear</button>
+        <div class="container3">
+
+        <ul id="itemlist"></ul>
+        </div>
+     </div>
+     <!-- meet author -->
+      <div class="container3">
+        <h1>Chat with us</h1>
+        <form>
+            <input type="text" id="name" placeholder="Type your name..." required>
+            <input type="text" id="email" placeholder="Type your email..." required>
+            <textarea id="message" placeholder="Type your message..." required></textarea>
+            <button type="submit">Send</button>
+            <p id="contactMessage"></p>
+        </form>
+      </div>
+    <script src = 'index.js'></script>   
 </body>
 </html>
