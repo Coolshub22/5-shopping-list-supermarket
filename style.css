@@ -93,7 +93,7 @@ nav button:hover{
     color: beige;
 }
 /* adding */
-.container2{
+#container2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -116,7 +116,7 @@ input{
 input:hover{
     background-color: beige;
 }
-.container2 button{
+#container2 button{
     padding: 8px;
     border: none;
     background-color: white;
@@ -125,7 +125,7 @@ input:hover{
     transition: 0.5s;
     height: 50px;
 }
-.container2 button:hover{
+#container2 button:hover{
     background-color: beige;
 }
 ul{
@@ -153,7 +153,7 @@ li.purchased{
     background: gold;
 }
 /* contacts */
-.container3 h1{
+#container3 h1{
     font-size: 50px;
     font-weight: bold;
     text-align: center;
@@ -181,7 +181,7 @@ input[type="text"]:hover,input[type="email"]:hover,textarea:hover{
     background-color: beige;
 }
 
-.container3 button{
+#container3 button{
     padding: 8px;
     border: none;
     background-color:whitesmoke;
@@ -189,7 +189,7 @@ input[type="text"]:hover,input[type="email"]:hover,textarea:hover{
     border-radius: 5px;
     transition: 0.5s;
 }
-.container3 button:hover{
+#container3 button:hover {
     background-color: beige;
 }
 hr{

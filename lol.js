@@ -1,24 +1,12 @@
 // Initially hide the shopping list and contact form
- document.getElementByid('container2').style.display = 'none';
-document.getElementByid('container3').style.display = 'none';``
+document.getElementById('container2').style.display = 'none';
+document.getElementById('container3').style.display = 'none';
 
 // Start the shopping list by hiding the intro and showing the shopping list and contact form
 function startShoppingList() {
-    // Fade out the intro section
-    const introContainer = document.getElementByid('intro'); 
-    introContainer.style.opacity = 0;  // Start fading out the intro container
-    setTimeout(function() {
-        introContainer.style.display = 'none';  // Completely hide it after fading out
-    }, 500);  // Match the fade duration (0.5 seconds)
-
-    // Show the shopping list section with a fade-in effect
-    const shoppingContainer = document.getElementByid('container2');
-    shoppingContainer.style.display = 'block';
-    shoppingContainer.style.opacity = 0;
-
-    setTimeout(function() {
-        shoppingContainer.style.opacity = 1;  // Fade in the shopping container
-    }, 10);  // A small delay to allow the element to be displayed before fading in
+    document.getElementById('container1').style.display = 'none';
+    document.getElementById('container2').style.display = 'block';
+    document.getElementById('container3').style.display = 'block';
 }
 
 // Function to add items to the shopping list
@@ -67,5 +55,4 @@ function clearContactForm() {
     document.getElementById('contactMessage').textContent = ""; // Clear any contact message
 }
 
-// Event listener to handle "Create Shopping List" button click
-document.getElementById('shop-button').addEventListener('click', startShoppingList);
+
