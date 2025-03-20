@@ -3,49 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>5 Star Shop</title>
+    <title>5Star Shopping List</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="images/01Oct24 Anis Free Upload.png" type="image/x-icon">
 </head>
-<header>
-    <nav>
-    <video autoplay muted loop  id="myVideo">
-        <source src="videos/shop.mp4" type="video/mp4">
-    </video>
-     <button id="create-list-button"> Get Started</button>
-    </nav>
-</header>
 <body>
-    <!--intro 1 -->
-    <div class="container1">
-        <div class="main">
-            <h1>5 Star Shop</h1>
-            <p>Get Started By Creating Your Shopping List</p>
-            <button id="shop-button"> Create Shopping List</button>
-            
-        </div>
-    </div>
-    <!-- adding part 2-->
-     <div id="container2">
-        <input type="text" id="iteminput" placeholder="Item...">
-        <button id = "addBtn">Add To Cart</button>
-        <button id = "clearBtn">Clear List</button>
-        <div class="container3">
-            
 
-        <ul id="itemlist"></ul>
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <!-- Logo -->
+            <img src="logo/shop.mp4" alt="5Star Shop Logo" class="logo">
+            <h1>5Star Shopping List</h1>
         </div>
-     </div>
-     <!-- contacts-->
-      <div id="container3">
-        <h1>Chat with us</h1>
-        <form>
-            <input type="text" id="email" placeholder="Type your email..." required>
-            <textarea id="message" placeholder="Type your message..." required></textarea>
-            <button type="submit">Send</button>
-            <p id="contactMessage"></p>
-        </form>
-      </div>
-    <script src = 'index.js'></script>   
+    </header>
+
+    <!-- Navbar Section -->
+    <nav>
+        <ul>
+            <li><a href="#shoppingListSection">Shopping List</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content Section: Shopping List -->
+    <section id="shoppingListSection">
+        <div>
+            <h2>Manage Your Shopping List</h2>
+
+            <!-- Form to add new item -->
+            <div class="input-container">
+                <input type="text" id="itemName" placeholder="Item name">
+                <input type="number" id="itemPrice" placeholder="Price">
+                <button onclick="addItem()">Add</button>
+            </div>
+
+            <!-- Display the shopping list -->
+            <div id="shoppingList"></div>
+
+            <!-- Button to clear the shopping list -->
+            <button class="clear-btn" onclick="clearList()">Clear List</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About</h2>
+        <p>This is a simple shopping list app where you can add, mark items as purchased, and remove items from your list. It uses local storage to persist the data across page refreshes.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you have any questions, feel free to reach out!</p>
+        <p>Contact email: <a href="mailto:5star@gmail.com">5star@gmail.com</a></p>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p><a href="https://github.com/Edwin-kipyego" target="_blank">GitHub</a></p>
+        <p>&copy; 2025 5Star Shop. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+
 </body>
 </html>
