@@ -12,7 +12,7 @@
     <video autoplay muted loop  id="myVideo">
         <source src="videos/shop.mp4" type="video/mp4">
     </video>
-     <button id="nav-button" >Let's Get Started</button>
+     <button id="nav-button" > Get Started</button>
     </nav>
 </header>
 <body>
@@ -21,14 +21,13 @@
         <div class="main">
             <h1>5 Star Shop</h1>
             <p>Get Started By Creating Your Shopping List</p>
-            <button id="shop-button">Create Shopping List</button>
+            <button id="shop-button"> + Create Shopping List</button>
         </div>
     </div>
     <!-- adding part 2-->
      <div class="container2">
-        <input type="text" id="iteminput" placeholder="Add an item...">
-        <button onclick="additem()">Add</button>
-        <button onclick="clearitem()">Clear</button>
+        <input type="text" id="iteminput" placeholder="Item...">
+        <button onclick="additem()">Add To Cart</button>
         <div class="container3">
 
         <ul id="itemlist"></ul>
@@ -38,15 +37,12 @@
       <div class="container3">
         <h1>Chat with us</h1>
         <form>
-            <input type="text" id="name" placeholder="Type your name..." required>
             <input type="text" id="email" placeholder="Type your email..." required>
             <textarea id="message" placeholder="Type your message..." required></textarea>
             <button type="submit">Send</button>
             <p id="contactMessage"></p>
         </form>
       </div>
-      <!-- footer and meeting yours authors-->
-       
     <script src = 'index.js'></script>   
 </body>
 </html>
