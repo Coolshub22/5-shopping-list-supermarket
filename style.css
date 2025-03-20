@@ -95,6 +95,7 @@ nav button:hover{
 /* adding */
 #container2{
     display: flex;
+    flex-direction: column; /* Change to stack elements vertically */
     justify-content: center;
     align-items: center;
     height: 70vh;
@@ -137,13 +138,16 @@ li{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #70E7FF;
+    background-color:white;
+    color: black;
     padding: 10px;
     border-radius: 5px;
     margin: 5px 0;
     cursor: pointer;
     transition: 0.5s;
-    width: 100%;
+    width: 50px;
+    font-size: 20px;
+    font-weight: 200;
 }
 li:hover{
     background-color: beige;
