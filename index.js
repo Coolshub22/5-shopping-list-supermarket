@@ -37,7 +37,7 @@ function displayItems() {
     shoppingList.innerHTML = "";  // Clear the existing list
 
     // Retrieve items from localStorage
-    let items = JSON.parse(localStorage.getItem("shoppingList")) || [];
+    //let items = JSON.parse(localStorage.getItem("shoppingList")) || [];
 
     // Loop through the items and display them
     items.forEach((item, index) => {
